@@ -1,0 +1,56 @@
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 50px 0;
+  }
+  
+  .event {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 20px; /* Ajout d'un espace entre chaque événement */
+  }
+  
+  .event:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .event::before {
+    position: absolute;
+    content: attr(data-date);
+    top: -35px; /* Augmente l'espace entre la date et le cercle */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .event:first-child::before {
+    content: "2000"; /* Affiche la date du premier événement */
+  }
+  
+  .event:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    left: calc(50% + 25px);
+  }
+  
+  .event:last-child::after {
+    width: 0;
+  }
+  
