@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type:none;
+    background-color:#F1F1F1;
+    width:25%;
+    position:fixed;
+    height:100%;
+    overflow:auto;
+}
+
+li a{
+    display:block;
+    padding:6px 10px;
+    text-decoration:none;
+}
