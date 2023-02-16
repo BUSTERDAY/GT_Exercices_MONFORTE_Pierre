@@ -1,0 +1,42 @@
+footer {
+    background-color: #19d30f;
+    border-top: 1px solid #ddd;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  .div_principal {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .colones {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  ul li a {
+    color: #666;
+  }
+  
+  ul li i {
+    margin-right: 10px;
+    color: #222;
+  }
+  
