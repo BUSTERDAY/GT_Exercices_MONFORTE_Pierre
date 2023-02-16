@@ -1,0 +1,29 @@
+*{
+    overflow: scroll;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #000;
+    justify-content: space-around;
+
+}
+
+.logo{
+    display: flex;
+    float: left;
+    width: 120px;
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    float: right;
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+}
