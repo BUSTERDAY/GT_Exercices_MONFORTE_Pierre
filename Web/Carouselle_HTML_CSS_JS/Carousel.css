@@ -15,22 +15,27 @@
   height: auto;
 }
 
-.carousel-prev,
-.carousel-next {
+.carousel-buttons {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.carousel-buttons button {
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  z-index: 2;
 }
 
-.carousel-prev {
-  left: 0;
+.carousel-buttons i {
+  color: white;
 }
 
-.carousel-next {
-  right: 0;
+.carousel-prev i {
+  transform: rotate(180deg);
 }
