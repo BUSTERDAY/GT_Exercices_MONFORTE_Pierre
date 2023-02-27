@@ -3,16 +3,16 @@
     padding:0;
 }
 
-ul{
+.ul{
     list-style-type:none;
     background-color:#F1F1F1;
-    width:25%;
+    width:100px;
     position:fixed;
     height:100%;
     overflow:auto;
 }
 
-li a{
+.li{
     display:block;
     padding:6px 10px;
     text-decoration:none;
